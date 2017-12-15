@@ -6,7 +6,7 @@ const path = require('path');
 require('./server/config/mongoose.js');
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, './client/dist')));
+app.use(express.static(path.join(__dirname, './Client/dist')));
 
 
 var routes_setter = require('./server/config/routes.js');
